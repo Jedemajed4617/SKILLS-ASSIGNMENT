@@ -1,0 +1,24 @@
+{
+    "products": [
+      { "id": 1, "name": "skateboard", "price": 24.5 },
+      { "id": 2, "name": "pet", "price": 12.95 },
+      { "id": 3, "name": "schoen", "price": 20.05 }
+    ],
+    "colours": [
+      { "id": 1, "name": "Blauw", "price_add": 0 },
+      { "id": 2, "name": "Rood", "price_add": 0 },
+      { "id": 3, "name": "Goud", "price_add": 3 },
+      { "id": 4, "name": "Zilver", "price_add": 2 }
+    ],
+    "symbols": [
+      { "id": 1, "name": "BAM" },
+      { "id": 2, "name": "BANG" },
+      { "id": 3, "name": "BOO" },
+      { "id": 4, "name": "BOOM" },
+      { "id": 5, "name": "LOL" },
+      { "id": 6, "name": "OH" },
+      { "id": 7, "name": "OMG" },
+      { "id": 8, "name": "POW" }
+    ]
+}
+  

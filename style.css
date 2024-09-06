@@ -1,0 +1,271 @@
+/* COLORS: #ec4e20 en #353531 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+li, a {
+    list-style: none;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/* NOTIFICATION: */
+.notification {
+    position: fixed;
+    top: -100px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #353531; 
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    transition: top 0.5s ease-in-out; 
+    z-index: 9999;
+    opacity: 0;
+}
+  
+/* Notification visible class (on-screen) */
+.notification.show {
+    top: 30px;
+    opacity: 1;
+}
+
+/* HOMEPAGE: */
+.outercontainer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.container {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.text-section {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.text-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-section {
+        padding: 20px 0;
+    }
+
+    .text-section h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* NAVIGATION: */
+.navigation{
+    width: 100%;
+    height: 20;
+    border-bottom: 2px solid;
+    border-color: #353531;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.navigationContainer{
+    width: 95%;
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+}
+
+.navigationLogocontainer{
+    width: 12.5rem;
+    height: auto;
+}
+
+.navigationLogo{
+    width: 100%;
+    height: auto;
+}
+
+.navigationList{
+    width: 100%;
+    height: 100%;
+    color: #ec4e20;
+    display: flex;
+    gap: 10rem;
+}
+
+.navigationListitem{
+    font-size: 3.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Impact', sans-serif;
+}
+
+/* PRODUCT CARD */
+.peetje{
+    width: 100%;
+    min-height: 70vh;
+}
+
+.product-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: sans-serif;
+    margin-top: 10rem;
+}
+
+/* Image section */
+.image-section img {
+    max-width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Configurator section */
+.configurator-section {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.configurator-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.step {
+    margin-bottom: 20px;
+}
+
+.step h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.total-price {
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.order-btn {
+    padding: 15px;
+    background-color: #ec4e20;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background-color: #353531;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .product-card {
+        flex-direction: column;
+    }
+
+    .image-section {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .configurator-section {
+        margin-left: 0;
+    }
+}
+
+/* OVERLAY SYMBOL */
+.image-section {
+    position: relative;
+    width: 300px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.base-image {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 63%;
+    left: 45%;
+    width: 20%; /* Scale to 25% of the original size */
+    height: auto; /* Maintain aspect ratio */
+    pointer-events: none; /* Allows clicks to pass through to the underlying image */
+    display: none; /* Hide by default */
+    transform: scale(0.2); /* Scale down to 25% of original size */
+    transform-origin: top left; /* Anchor scaling from the top left corner */
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KickflipKings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<div id="notification" class="notification">
+    Thank you for your order!
+</div>
+
+<body>
+    <header class="navigation">
+        <nav class="navigationContainer">
+            <div class="navigationLogocontainer">
+                <img class="navigationLogo" src="./logo/logo.png" alt="">
+            </div>
+            <ul class="navigationList">
+                <li class="navigationListitem">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="navigationListitem">
+                    <a href="skate.html">Skateboards</a>
+                </li>
+                <li class="navigationListitem">
+                    <a href="hat.html">Hats</a>
+                </li>
+                <li class="navigationListitem">
+                    <a href="shoe.html">Shoes</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="peetje">
+        <div class="product-card">
+            <div class="image-section">
+                <div class="image-container">
+                    <img src="./products/skateboard.png" alt="Product Image" id="productImage" class="base-image">
+                    <img src="" alt="Symbol Overlay" id="symbolOverlay" class="overlay-image">
+                </div>
+            </div>
+    
+            <div class="configurator-section">
+                <h1>Configure Your Skateboard!</h1>
+    
+                <div class="step">
+                    <h2>Select a Colour</h2>
+                    <select id="colorSelect" class="dropdown"></select>
+                </div>
+    
+                <div class="step">
+                    <h2>Select a Symbol</h2>
+                    <select id="symbolSelect" class="dropdown"></select>
+                </div>
+    
+                <div id="totalPrice" class="total-price">Total Price: €0</div>
+    
+                <button id="submitOrder" class="order-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        copyright - 2024 KickflipKings
+    </footer>
+</body>
+
+</html>
